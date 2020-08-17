@@ -63,7 +63,6 @@ class artifactory::config {
       $binary_provider_type = 'file-system'
     }
   }
-  fail("${::artifactory::binary_provider_type}, ${binary_provider_type}")
 
   # Determine the directory for the chosen binary provider.
   if ($binary_provider_type == 'file-system') and ! $::artifactory::binary_provider_filesystem_dir {
