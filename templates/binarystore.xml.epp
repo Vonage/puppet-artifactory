@@ -62,4 +62,8 @@
 <% } elsif $binary_provider_type == 'fullDbDirect' { -%>
     <provider id="blob" type="blob"/>
 <% } -%>
+    <provider id="file-system" type="file-system">
+        <fileStoreDir>/mnt/artifactory_efs/filestore</fileStoreDir>
+        <tempDir>/temp</tempDir>
+    </provider>
 </config>
