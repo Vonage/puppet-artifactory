@@ -31,6 +31,13 @@ class artifactory::config {
     $_secrets_dir = "${::artifactory::artifactory_home}/etc/artifactory/.secrets"
     $_security_dir = "${::artifactory::artifactory_home}/etc/artifactory/security"
   }
+  
+  file { $_config_dir :
+    ensure => directory,
+    owner  => 'artifactory',
+    group  => 'artifactory',
+  }
+    
 
   # Map binary provider types to their actual configuration options.
   $_types = {
