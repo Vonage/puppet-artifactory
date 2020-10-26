@@ -144,7 +144,7 @@ This can be changed if Artifactory needs to be setup from a different repository
 
 Sets the package name to install. Defaults to 'jfrog-artifactory-oss'.
 
-This can be changed if Artifactory needs to install a differently named package. Possibly needed if na organization creates their own Artifactory package.
+This can be changed if Artifactory needs to install a differently named package. Possibly needed if an organization creates their own Artifactory package.
 
 ##### `package_version`
 
